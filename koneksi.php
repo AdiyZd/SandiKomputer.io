@@ -2,7 +2,7 @@
 
 session_start();
 
-$host = 'https://fac2-36-71-85-37.ngrok-free.app/phpmyadmin/index.php?route=/server';
+$host = 'https://fac2-36-71-85-37.ngrok-free.app';
 $user = 'root';
 $pw = '';
 $data = 'sandi_komputer';
