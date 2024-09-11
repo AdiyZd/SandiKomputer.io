@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sandikomputer</title>
+    <link rel="stylesheet" href="style_login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="img/icon/bulat.png"
+      type="img/jpg"
+      style="border-radius: 100%"
+    />
+  </head>
+
+  <body class="bg-secondary bg-opacity-25">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">SandiKomputer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="magang/absen.html">Absensi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://adiyzd.github.io/Biodata-github.io/">Adi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- ini adalah form login -->
+    <div class="control container text-center">
+      <form method="POST" action="koneksi.php">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Masukan Nama lengkap"
+            name="user"
+            required
+          />
+          <label for="user">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+            name="email"
+            required
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+            name="pass"
+            required
+          />
+          <label for="pass">Password</label>
+        </div>
+        <!-- bootem -->
+        <button type="submit" class="btn btn-outline-dark form-control mt-3">
+          Masuk
+        </button>
+      </form>
+    </div>
+    <!-- end form -->
+
+    <!-- footer -->
+    <!-- <footer class="bg-primary text-white pb-5">
+      <div class="container">
+        <div class="row justify-content-evenly text-center">
+          <div class="col-12 text-center fs-6">
+            <p>&copy; 2024 | Creadted By Agus Adi</p>
+          </div>
+
+          <div class="col-3">
+            <h5 class="opacity-75">Pengurus Sandi Komputer</h5>
+            <p class="position-relative opacity-50">
+              Teguh Julianto.<br />Sendi Prayogi.
+            </p>
+          </div>
+
+          <div class="col-3">
+            <h5 class="opacity-75">Karyawan Sandi Komputer</h5>
+            <p class="position-relative opacity-50">
+              Agus Adi P.<br />Taufik Hidayat.<br />Meyda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- end footer -->
+    <script src="cont.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

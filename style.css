@@ -1,0 +1,32 @@
+body {min-height: 3000px;}
+
+.navbar {z-index: 999;}
+
+#carouselExampleDark { padding-top: 3rem;}
+
+.row img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1 {padding-top: 40px;}
+
+footer {
+  margin-top: -5px;
+  height: 200px;
+  font-weight: bold;
+}
+
+footer a {text-decoration: none;}
+
+h6 {margin-left: 2rem;}
+
+.p1 {
+  justify-content: start;
+  margin-left: 2rem;
+}
+
+h5 {font-size: 10px;}
+
+.position-relative {font-size: 12px;}
