@@ -1,7 +1,5 @@
-// alerts.js
-
-// Import SweetAlert2
-import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js';
+// Jika menggunakan modul ES6, pastikan browser mendukung atau gunakan <script> tag
+// import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js';
 
 // Fungsi untuk mendapatkan nilai cookie
 function getCookie(name) {
@@ -22,11 +20,13 @@ function getCookie(name) {
 
 // Fungsi untuk menghandle klik kartu
 async function handleCardClick(event) {
+    // Ambil elemen yang diklik
+    let card = event.currentTarget;
     // Periksa apakah pengguna sudah login
     var isLoggedIn = getCookie('loggedin') === 'true';
 
     if (isLoggedIn) {
-        let cardText = this.querySelector('.card-text').textContent;
+        let cardText = card.querySelector('.card-text').textContent;
 
         // Gunakan SweetAlert2 untuk menampilkan alert dengan input tanggal dan waktu
         const { value: dateTime } = await Swal.fire({
