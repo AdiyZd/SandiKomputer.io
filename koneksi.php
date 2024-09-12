@@ -6,7 +6,7 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 session_start();
 
-$host = 'localhost'; // Tetap gunakan 'localhost' karena akses database lokal
+$host = '127.0.0.1'; // Tetap gunakan 'localhost' karena akses database lokal
 $user = 'root';
 $pw = '';
 $data = 'sandi_komputer';
