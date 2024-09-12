@@ -5,8 +5,8 @@ fetch('https://23de-36-71-85-37.ngrok-free.app/koneksi.php', {  // URL Ngrok
     },
     body: new URLSearchParams({
         user: 'admin',
-        email: 'admin@example.com',
-        pass: 'password123'
+        email: 'adiyzdbusinnes@gmail.com',
+        pass: 'admin'
     })
 })
     .then(response => response.text())
