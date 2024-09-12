@@ -1,8 +1,12 @@
 <?php
+// Tambahkan header CORS di bagian paling atas file
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: Content-Type");
 
 session_start();
 
-$host = 'https://fac2-36-71-85-37.ngrok-free.app';
+$host = 'localhost'; // Tetap gunakan 'localhost' karena akses database lokal
 $user = 'root';
 $pw = '';
 $data = 'sandi_komputer';
@@ -14,7 +18,7 @@ if ($connection->connect_error) {
     die("Koneksi gagal: " . $connection->connect_error);
 }
 
-// interaksi user html form POST
+// Interaksi user html form POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validasi keberadaan kunci
     if (isset($_POST['user'], $_POST['email'], $_POST['pass'])) {
@@ -22,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
         $password = $_POST['pass'];
 
-        // luru query data seko mysql
+        // Query ke database
         $stmt = $connection->prepare("SELECT * FROM tb_admin WHERE nama = ? AND email = ? AND password = ?");
         
         if ($stmt === false) {
