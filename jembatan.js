@@ -1,4 +1,4 @@
-fetch('https://23de-36-71-85-37.ngrok-free.app/koneksi.php', {  // URL Ngrok
+fetch('https://0723-36-71-82-200.ngrok-free.app/koneksi.php', {  // URL Ngrok
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
