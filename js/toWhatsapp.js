@@ -36,25 +36,46 @@ document.getElementById('buy3').addEventListener('click', function() {
 })
 
 // product 4
-const element = document.getElementById('buy44').addEventListener('click', function() {
-    if (element) {
-        const pc1 = document.getElementById('pc-1').textContent;
-        const info110 = document.getElementById("info-4").innerHTML(/<br>/g, '\n')
-        const hargapc = document.getElementById('pc1').textContent;
+document.getElementById('buy44').addEventListener('click', function() {
+    const pproduk = document.getElementById('3').textContent;
+    const spekPc2 = document.getElementById('info2').innerHTML.replace(/<br>/g, '\n')
+    const hargapc1 = document.getElementById('pc1').textContent
 
-        const admin111 = `*Produk:* ${pc1}\n*Spesifikasi:* \n${info110}\n*Harga:* ${hargapc}\n*${tanya}*`;
+    const sendPc = `*Produk:* ${pproduk}\n*Spesifikasi:* \n${spekPc2}\n*Harga: Rp.* ${hargapc1}\n*${tanya}*`;
 
-        window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(admin111)}`, '_blank');
-    } else {console.error("id ne gak ono masbro")}
-});
+    window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(sendPc)}`, '_blank');
+})
 
 // product 5
 document.getElementById('buy5').addEventListener('click', function() {
     const acer = document.getElementById('acer').textContent;
-    const info5 = document.getElementById('info5').innerHTML(/<br>/g, '\n')
+    const info5 = document.getElementById('info5').innerHTML.replace(/<br>/g, '\n')
     const harga5 = document.getElementById('hargaAcer').textContent;
 
     const accer = `*Produk:* ${acer}\n*Spesifikasi:* \n${info5}\n*Harga:* ${harga5}\n*${tanya}*`;
 
     window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(accer)}`, '_blink'); // api send whatsapp
+})
+
+// procuct 6
+
+document.getElementById('buy6').addEventListener('click', function() {
+    const product6 = document.getElementById('p6').textContent;
+    const spekProduct6 = document.getElementById('s6').innerHTML.replace(/<br>/g, '\n')
+    const hargaProduct6 = document.getElementById('h6').textContent;
+
+    const zyrex = `*Produk:* ${product6}\n*Spesifikasi:* \n${spekProduct6}\n*Harga:* ${hargaProduct6}\n*${tanya}*`;
+
+    window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(zyrex)}`, '_blink') // api send whatsapp
+})
+
+// product 7
+document.getElementById('buy7').addEventListener('click', function() {
+    const product7 = document.getElementById('p7').textContent;
+    const spekProduct7 = document.getElementById('s7').textContent;
+    const hargaProduct7 = document.getElementById('h7').textContent;
+    
+    const apple = `*Produk:* ${product7}\n*Spesifikasi:* \n${spekProduct7}\n*Harga:* ${hargaProduct7}\n*${tanya}*`;
+
+    window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(apple)}`, '_blink') // api send whatsapp
 })
