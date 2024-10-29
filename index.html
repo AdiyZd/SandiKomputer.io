@@ -11,48 +11,38 @@
   <link rel="icon" href="img/icon/bulat.png" type="img/jpg" style="border-radius: 100%;">
 </head>
 
-<body data-loggedin="<?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ? 'true' : 'false'; ?>  class="bg-secondary bg-opacity-25">
+<body
+  data-loggedin="<?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ? 'true' : 'false'; ?>  class="
+  bg-secondary bg-opacity-25">
 
   <!-- navbar -->
-  <nav
-  class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top"
->
-  <div class="container">
-    <a class="navbar-brand" href="#">SandiKomputer</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="magang/absen.html">Absensi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#produk">Produk</a>
-        </li>
-        <li class="produk nav-item">
-          <a class="nav-link" href="https://adiyzd.github.io/Biodata-github.io/">Adi</a>
-        </li
-        <li class="nav-item" id="login-link">
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">SandiKomputer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="magang/absen.html">Absensi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="produk nav-item">
+            <a class="nav-link" href="https://adiyzd.github.io/Biodata-github.io/">Adi</a>
+          </li <li class="nav-item" id="login-link">
           <a class="nav-link" href="login.html">Login</a>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <!-- ini adalah slider -->
   <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
@@ -106,205 +96,1142 @@
         </div>
       </div>
       <div class="row justify-content-center">
+        <!-- bagian 1 -->
         <div class="col-lg-4 mb-3">
           <div class="card">
-            <img src="img/Brend/2.jpeg" class="card-img-top" alt="...">
+            <img src="img/Brend/1.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">LENOVO V14-MEID</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang!</a>
+              <h5 class="card-title">ADVAN WORKPLUS R5</h5>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">Beli
+                Sekarang</a>
             </div>
           </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">ADVAN WORKPLUS R5</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/Brend/1.jpeg" class="img-fluid" alt="...">
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <h4>SPESIFIKASI</h4>
+                    <p>
+                      R5 6600H<br>
+                      16GB RAM<br>
+                      512GB SSD 
+                    </p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <h4>HARGA!</h4>
+                    <H5 style="color: red;">7.390.000</H5> 
+                  </div>
+                </div>               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Beli Sekarang</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end bagian 1 -->
+
+        <!-- bagian 2 -->
         <div class="col-lg-4 mb-3">
           <div class="card">
+              <img src="img/Brend/2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">LENOVO V14-MEID</h5>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Beli Sekarang</a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">LENOVO V14-MEID</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="img/Brend/2.jpeg" class="img-fluid" alt="...">
+                      <div class="row">
+                        <div class="col-6 text-center">
+                          <h4>SPESIFIKASI</h4>
+                          <p>
+                            INTEL CORE I3 1215U<br>
+                            4GB RAM<br>
+                            256GB SSD<br>
+                            GREY 
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <h4>HARGA!</h4>
+                          <H5 style="color: red;">5.900.000</H5> 
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                      <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- end bagian 2 -->
+      
+      <!-- bagian 3 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/3.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">PC GAMING INTEL</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang!</a>
+                <h5 class="card-title">PC GAMING</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">PC GAMING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/3.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I5 4590<br>
+                          MOBO H81<br>
+                          RAM 8GB DDR3<br>
+                          256GB SSD<br>
+                          GTX 750 TI <br>
+                          CASING RAPTOR + PSU<br>
+                          MONITOR LG 24INCH <br>
+                          FANTECH KM103 
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">5.400.000</H5> 
+                      </div>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 3 -->
+      
+      <!-- bagian 4 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/4.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">PC GAMING AMD</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">PC GAMING</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prduck4">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="prduck4" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">PC GAMING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/4.jpeg" class="img-fluid" alt="procuk kami">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          AMD RYZEN 5 5600<br>
+                          MOBO A320M<br>
+                          RAM 16GB<br>
+                          256GB SSD<br>
+                          GTX 750 TI <br>
+                          CASING RAPTOR + PSU BLACK<br>
+                          MONITOR PIXEL 19 INCH<br>
+                          LOGITECH MK120
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">6.970.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 4 -->
+      
+      <!-- bagian 5 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/5.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ACER AL-1431Y7</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ACER AL14-31Y7</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ACER AL14-31Y7</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/5.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 1215<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          SILVER
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">6.440.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 5 -->
+      
+      <!-- bagian 6 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/6.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ZYREX BUNAKEN</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ZYREX BUNAKEN</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ZYREX BUNAKEN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/6.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL N4020<br>
+                          RAM 4GB<br>
+                          256GB SSD + 64GB eMMC<br>
+                          GREY
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">2.950.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 6 -->
+       
+      <!-- bagian 7 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/7.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">MACBOOK 2020</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">APPLE MACBOOK AIR 2020</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">APPLE MACBOOK AIR 2020</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/7.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          M1 8C CPU<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          GPU 7C OS X<br>
+                          ROSE GOLD<br>
+                          GARANSI RESMI IBOX
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">12.495.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 7 -->
+      
+      <!-- bagian 8 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/8.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ASUS A1404Z-IPS353</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ASUS A1404Z-IPS353</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ASUS A1404Z-IPS353</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/8.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 1215U<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          TERRA COTTA
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">7.445.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 8 -->
+      
+      <!-- bagian 9 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/9.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">PC GAMING RYZEN 5</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">PC GAMING</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">PC GAMING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/9.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          RYZEN 5 5600<br>
+                          ASROC B450M<br>
+                          RAM 16GB<br>
+                          512GB SSD<br>
+                          RX 6650 XT<br>
+                          AEROCOOL LUX NON RGB<br>
+                          CASING CUBEGAMING LICH WHITE<br>
+                          ACER NITRO RG241Y-P<br>
+                          FANTECH KM P3
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">12.400.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 9 -->
+      
+      <!-- bagian 10 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/10.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ADVAN WORKPRO LITE</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal10">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal10" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ADVAN WORKPRO LITE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/10.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 1220P<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          GREY
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">4.900.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 10 -->
+      
+      <!-- bagian 11 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/11.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LENOVO IP1-3KID</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal11">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal11" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">LENOVO IP1-3KID</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/11.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          R3 7320<br>
+                          RAM 8GB<br>
+                          521GB SSD<br>
+                          SAND
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">6.195.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 11 -->
+      
+      <!-- bagian 12 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/12.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PX GAMING</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal12">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal12" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">PX GAMING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/12.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 10105F<br>
+                          MOBO H410M<br>
+                          RAM 16GB<br>
+                          256GB SSD<br>
+                          GTX 750 TI<br>
+                          PSU AEROCOOL 550W<br>
+                          CASING FANTECH CG 78<br>
+                          ACER 24 INCH <br>
+                          FANTECH KM 103
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">7.600.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 12 -->
+      
+      <!-- bagian 13 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
             <img src="img/Brend/13.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">LENOVO IP DUET 3-2XID</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">LENOVO IP DUET 3-2XID</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal13">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/12.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal13" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">LENOVO IP DUET 3-2XID</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/13.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL N200<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          TOUCH SCREEN<br>
+                          LEPASAN<br>
+                          ABYSS BLUE
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">9.245.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 13 -->
+      
+      <!-- bagian 14 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/14.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">PC GAMING INTEL GEN 10</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ASUS ROG G614JU</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal14">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/14.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal14" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ASUS ROG G614JU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/14.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I7 13650HX<br>
+                          RAM 16GB<br>
+                          256GB SSD<br>
+                          RTX 4050<br>
+                          GREY
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">23.845.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 14 -->
+      
+      <!-- bagian 15 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/15.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ASUSU ROG G614JU</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">LENOVO IP 3-CIPD</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal15">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/15.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal15" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">LENOVO IP 3-CIPD</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/15.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 1215U<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          ARCTIC GREY
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">6.845.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 15 -->
+      
+      <!-- bagian 16 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/16.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">LENOVO IP3-CPID</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ACER A514</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal16">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/16.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal16" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ACER A514</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/16.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I5 133U<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          STEEL SREY
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">8.770.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 16 -->
+      
+      <!-- bagian 17 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/17.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ACER A514</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">PC GAMING</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal17">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/17.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal17" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">PC GAMING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/17.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I5 10400H<br>
+                          ASUS H410M<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          GTX 1050TI<br>
+                          SAMSUNG S24R350 CURVED<br>
+                          AULA MZ01 WHITE<br>
+                          ALCATROZ C3300
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">7.450.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 17 -->
+      
+      <!-- bagian 18 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/18.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">PC GAMING INTEL GEN I5-10400H</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ACER NITRO V15</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal18">Beli Sekarang</a>
             </div>
-          </div>
         </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal18" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ACER NITRO V15</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/18.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I9 13900H<br>
+                          RAM 16GB<br>
+                          512GB SSD<br>
+                          RTX 4060
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">19.195.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 18 -->
 
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/18.jpeg" class="card-img-top" alt="">
+      <!-- end bagian 19 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/19.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ACER NITRO V15</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">APPLE MACBOOK AIR 2022</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal19">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/19.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal19" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">APPLE MACBOOK AIR 2022</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/19.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          M2 8C CPU<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          GPU 8C OS X<br>
+                          SPACE GREY<br>
+                          GENERASI RESMI IBOX
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">16.000.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 19 -->
+      
+      <!-- bagian 20 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/20.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">MACBOOK AIR 2022</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">LENOVO IP 5-0AID 2 IN 1</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal20">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/20.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal20" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">LENOVO IP 5-0AID 2 IN 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/20.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE ULTRA 5 120U<br>
+                          RAM 16GB<br>
+                          512GB SSD<br>
+                          TOUCH/FLIP/PEN
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">12.845.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 20 -->
+      
+      <!-- bagian 21 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/21.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">LENOVO IP 5-0AID 2 IN 1</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">HP 14-EP0555TU</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal21">Beli Sekarang</a>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-4 mb-3">
-          <div class="card">
-            <img src="img/Brend/21.jpeg" class="card-img-top" alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal21" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">HP 14-EP0555TU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/21.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I3 1215U<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          SILVER
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">7.570.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 21 -->
+      
+      <!-- bagian 22 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/22.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">LAPTOP HP-4EPO555TU</h5>
-              <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, distinctio?</p> -->
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                <h5 class="card-title">ACER VERO AV14-53ED</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal22">Beli Sekarang</a>
             </div>
-          </div>
         </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal22" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ACER VERO AV14-53ED</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/22.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE ULTRA I5 1335<br>
+                          RAM 16GB<br>
+                          512GB SSD<br>
+                          BLUE
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">9.695.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 22 -->
 
-      </div>
+      <!-- bagian 23 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/23.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LENOVO THINKPAD X260</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal23">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal23" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">LENOVO THINKPAD X260</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/23.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I5 GEN 6TH<br>
+                          RAM 8GB<br>
+                          256GB SSD<br>
+                          BLACK
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">3.500.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 23 -->
+      
+      <!-- bagian 24 -->
+      <div class="col-lg-4 mb-3">
+        <div class="card">
+            <img src="img/Brend/24.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MSI THIN GF63-11UC</h5>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal24">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal24" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">MSI THIN GF63-11UC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Brend/24.jpeg" class="img-fluid" alt="...">
+                    <div class="row">
+                      <div class="col-6 text-center">
+                        <h4>SPESIFIKASI</h4>
+                        <p>
+                          INTEL CORE I5 10400H<br>
+                          RAM 8GB<br>
+                          512GB SSD<br>
+                          RTX 3050<br>
+                          BLACK
+                        </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <h4>HARGA!</h4>
+                        <H5 style="color: red;">10.200.000</H5> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- end bagian 24 -->
+
+
+    </div>
   </section>
   <!-- end content -->
 
@@ -319,7 +1246,7 @@
     <div class="container">
       <div class="row justify-content-evenly text-center">
         <div class="col-12 text-center fs-6">
-          <p>&copy; 2024 | Creadted By Agus Adi</p>
+          <p>&copy; 2024 | Creadted By <a href="https://www.instagram.com/xyd_adiy/" class="text-white" style="text-decoration: none;">Adi</a></p>
         </div>
 
         <div class="col-3">
@@ -329,7 +1256,7 @@
 
         <div class="col-3">
           <h5 class="opacity-75">Kariawan Sandi Komputer</h5>
-          <p class="position-relative opacity-50">Agus Adi P.<br>Taufik Hidayat.<br>Meyda.</p>
+          <p class="position-relative opacity-50">Adi.<br>Taufik Hidayat.<br>Meyda.</p>
         </div>
       </div>
     </div>
