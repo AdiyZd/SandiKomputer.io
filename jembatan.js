@@ -5,7 +5,7 @@ fetch('https://0723-36-71-82-200.ngrok-free.app/koneksi.php', {  // URL Ngrok
     },
     body: new URLSearchParams({
         user: 'admin',
-        email: 'adiyzdbusinnes@gmail.com',
+        email: 'admin@gmail.com',
         pass: 'admin'
     })
 })
