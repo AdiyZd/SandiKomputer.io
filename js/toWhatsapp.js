@@ -347,3 +347,4 @@ document.getElementById('buy24').addEventListener('click', function() {
 
 // `*Produk:* ${}\n*Spesifikasi:* \n${}\n*Harga:* ${}\n*${tanya}*`;
 
+// tess
