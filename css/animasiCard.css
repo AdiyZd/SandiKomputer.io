@@ -1,0 +1,35 @@
+.card {
+    transition: transfrom 2s ease, box-shadow 2s ease;
+    overflow: hidden;
+    cursor: pointer;
+    backface-visibility: hidden;
+    /* animation: HoverStart 2s ease-in; */
+}
+
+.card:hover {
+    /* animation: HoverStat 2s ease forwards; */
+
+    transform: scale(1.03) rotateX(2deg) rotateY(2deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+}
+
+.card-img-top {
+    transition: transfrom 1.05s ease-in-out;
+}
+
+.card:hover > .card-img-top {
+    transform: scale(1);
+}
+/* 
+@keyframes HoverStart{
+    0% {
+        transform: scale(1) rotateX(0deg) rotateY(0deg);
+    }
+    60% {
+        transform: scale(0.5) rotateX(1deg) rotateY(1deg);
+    }
+    100% {
+        transform: scale(1) rotateX(2deg) rotateY(2deg);
+    }
+} */
