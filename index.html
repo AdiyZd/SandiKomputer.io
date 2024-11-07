@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/loading.css">
   <!-- cdn aos css -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/hover/drop.css">
 </head>
 
 <body
@@ -32,23 +33,36 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" id="h" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="magang/absen.html" style="display: none;" disabled>Absensi</a>
           </li>
+          <!-- list servis -->
           <li class="nav-item">
-            <a class="nav-link" href="#produk">Produk</a>
+            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servis
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" id="sl">Servis Laptop</a></li>
+              <li><a class="dropdown-item" href="#" id="sp">Servis Pc</a></li>
+              <li><a class="dropdown-item" href="#" id="spl">Servis Printer</a></li>
+            </ul>
+          </li>
+          <!-- end list servis -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#produk">Produk</a>
           </li>
           <li class="produk nav-item">
-            <a class="nav-link" href="https://adiyzd.github.io/Biodata-github.io/" style="display: none;" disabled>Adi</a>
+            <a class="nav-link" aria-current="page" href="https://adiyzd.github.io/Biodata-gith ub.io/" style="display: none;" disabled>Adi</a>
           </li <li class="nav-item" id="login-link">
-          <a class="nav-link" href="login.html">Login</a>
+          <a class="nav-link  active" href="login.html">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <span id="targer"></span>
   <!-- ini adalah slider -->
   <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
@@ -1313,7 +1327,7 @@
     <div class="container">
       <div class="row justify-content-evenly text-center">
         <div class="col-12 text-center fs-6">
-          <p>&copy; 2024 | Creadted By <a href="https://www.instagram.com/xyd_adiy/" class="text-white" style="text-decoration: none;">Adi</a></p>
+          <p>&copy; 2024 | Creadted By <a href="https://www.instagram.com/xyd_adiy/" class="text-white" id="ft" style="text-decoration: none;">Adi</a></p>
         </div>
 
         <div class="col-3">
@@ -1339,6 +1353,7 @@
   <!-- script aos -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <script src="./js/brain.js"></script>
   <script src="js/aos.js"></script>
   <script src="./js/load.js"></script>
   <script src="js/toWhatsapp.js"></script>

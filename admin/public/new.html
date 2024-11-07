@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animasi bootom</title>
+  </head>
+  <style>
+    .mynav {
+      position: relative;
+    }
+
+    .mynav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mynav li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .mynav a {
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+    }
+
+    .mynav a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #000; /* Warna garis bawah */
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .mynav a:hover:before {
+      transform: scaleX(1);
+    }
+  </style>
+  <body>
+    <nav class="mynav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Company</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <span class="target"></span>
+    <script>
+      const links = document.querySelectorAll(".mynav li a");
+      const target = document.querySelector(".target");
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", function () {
+          const rect = this.getBoundingClientRect();
+          target.style.width = `${rect.width}px`;
+          target.style.left = `${rect.left}px`;
+          target.style.top = `${rect.bottom}px`;
+        });
+      });
+    </script>
+  </body>
+</html>

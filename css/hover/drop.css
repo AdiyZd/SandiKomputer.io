@@ -1,0 +1,66 @@
+.navbar-nav > .nav-item{position: relative;}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    min-height: auto;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+
+/* syling hover */
+
+#sl,
+#sp, 
+#spl {
+    color: inherit;
+    font-weight: 500;
+}
+
+#sl:hover,
+#sp:hover, 
+#spl:hover {
+    color: blue;
+    font-weight: 500;
+
+}
+
+#sl:focus,
+#sp:focus,
+#spl:focus,
+
+
+#sl:active,
+#sp:active,
+#spl:active {
+    outline: none;
+    background-color: inherit;
+}
+
+/* hover navbar */
+
+#h {
+    font-weight: 600;
+}
+
+#navbarNav ul>li:before {
+    content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #000; /* Warna garis bawah */
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+}
+
+#navbarNav ul>li a:before {
+    transform: scaleX(1);
+}
